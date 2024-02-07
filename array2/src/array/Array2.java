@@ -14,6 +14,7 @@ public class Array2 {
 	public static void main(String args) {
 		int notas[]= {2,5,7,6,9};
 		mostrar(notas,5);
+			System.out.println("ALEX"); //MUESTRA POR PANTALLA EL NOMBRE DEL DUEÑO// 
 	}
 	
 	public static void mostrar1(int n[]) {

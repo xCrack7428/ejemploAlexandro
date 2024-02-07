@@ -1,0 +1,17 @@
+package poooo;
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int[] sex=new int[100];
+int nomames = 0;
+for (int i=0;i<=0;i++) {
+	sex[i]=nomames;
+	System.out.println(nomames);
+}
+System.out.println(nomames);
+
+	}
+
+}

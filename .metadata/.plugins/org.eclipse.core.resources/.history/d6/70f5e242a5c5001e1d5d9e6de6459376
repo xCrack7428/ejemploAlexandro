@@ -1,0 +1,31 @@
+package ultima;
+
+import java.util.HashMap;
+
+public class ultimate2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+HashMap <String, Integer> le=new HashMap<String, Integer>();
+
+
+le.put("Javier", 2);
+le.put("lucia", 3);
+le.put("lucas", 5);
+le.put("manuela", 6);
+
+System.out.println("HASHMAP de "+le.size());
+
+
+
+le.remove("manuela");
+
+
+System.out.println("HASHMAP de "+le.size());
+
+System.out.println("CLAVES:"+le.keySet());
+
+
+	}
+
+}

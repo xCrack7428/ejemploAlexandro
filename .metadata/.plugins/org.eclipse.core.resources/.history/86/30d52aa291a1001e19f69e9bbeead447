@@ -1,0 +1,183 @@
+package TRABAJO;
+
+import java.util.Date;
+
+/**
+ * 
+ *@author Alexandro 
+ *
+ */
+public class Cliente {
+public static String Productoeliminado;
+public static String eliminarProducto1;
+ String nombre;
+ String apellido;
+ String Direccion;
+ int Historial;
+ private Date FechaDeAlta;
+ int Telefono;
+ int CodigoPedido=(int) (Math.random()*1000000);
+ static String agregarPedido;
+ 
+ 
+ public Cliente(String nombre, String apellidos, String Direccion, int Historial, Date FechaDeAlta, int Telefono, String apellido) {
+	 this.nombre=nombre;
+	 this.apellido=apellido;
+	 this.Direccion=Direccion;
+	 this.Historial=Historial;
+	 this.FechaDeAlta=FechaDeAlta;
+	 this.Telefono=Telefono;
+ }
+ 
+ 
+ 
+ public String getNombre() {
+	return nombre;
+}
+
+
+
+public void setNombre(String nombre) {
+	this.nombre = nombre;
+}
+
+
+
+public String getApellido() {
+	return apellido;
+}
+
+
+
+public void setApellido(String apellido) {
+	this.apellido = apellido;
+}
+
+
+
+public Date getFechaDeAlta() {
+	return FechaDeAlta;
+}
+
+
+
+public void setFechaDeAlta( Date FechaDeAlta) {
+	this.FechaDeAlta = FechaDeAlta;
+}
+
+
+
+public static void agregarPedido(String Pedido) {
+	 System.out.println(Pedido);
+}
+ 
+ 
+ 
+ public class Pedido {
+	
+	 Cliente Cliente;
+	 static Producto Producto;
+	 static String Producto2;
+	 Float ImporteTotal;
+	 PasarelaDePago Pago;
+	 String Estado;
+	 String TipoPago;
+	 static int mas;
+	 static String agregarCliente;
+	 static String agregarProducto1;
+	 static String agregarProduct2;
+	 static String eliminarProducto;
+	 
+	 public Pedido(Cliente Cliente, Producto Producto, String Producto2, Float ImporteTotal, PasarelaDePago Pago, String Estado, String TipoPago,int mas ) {
+		 this.Cliente=Cliente;
+		 this.Producto=Producto;
+		 this.Producto2=Producto2;
+		 this.ImporteTotal=ImporteTotal;
+		 this.Pago=Pago;
+		 this.Estado=Estado;
+		 this.TipoPago=TipoPago;
+	 }
+	 
+	 //Voy a utilizar el public, lo que hace esta funcion es que al poner un nombre dentro se convierten en constantes
+	 public enum Estado {
+		 PAGADO, PREPARANDO, LISTO, SERVIDO
+	 }
+	 
+	 public static String getProducto2() {
+		return Producto2;
+	}
+
+	public static void setProducto2(String Producto2) {
+		Producto2 = Producto2;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	public static void agregarCliente(Cliente Cliente) {
+		 System.out.println(Cliente);
+	}
+	 
+	 public static void agregarProducto1(String Producto1) {
+		 System.out.println(Producto1);
+	}
+	 
+	 public static void agregarProducto2(String Producto2) {
+		 System.out.println(Producto2);
+	}
+	 
+
+	public static void eliminarProducto(String string) {
+		
+		
+	}
+
+
+
+	
+	
+}
+}
+
+
+	

@@ -1,0 +1,81 @@
+package TRABAJO;
+
+import java.util.Date;
+import java.util.Scanner;
+
+/**
+ * 
+ *@author Alexandro 
+ *
+ */
+public class Aplicacion {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		//Zona cliente
+Date FechaDeAlta=new Date();
+Cliente cliente1=new Cliente(null, null, null, null, FechaDeAlta, 0);
+System.out.println("Dime tu noombre");
+
+cliente1.nombre=sc.next();
+System.out.println(cliente1.nombre.toLowerCase());
+cliente1.apellidos=sc.next();
+System.out.println(cliente1.apellidos.toUpperCase());
+cliente1.Direccion=sc.next();
+System.out.println(cliente1.Direccion);
+
+System.out.println(cliente1.getFechaDeAlta());
+
+System.out.println("ingrese su numero de telefono ");
+ 
+
+System.out.println(cliente1.Historial);
+
+
+
+//Zona pasarela de pago
+System.out.println("PASARELA DE PAGO" );
+
+Date FechaCodigoPago=new Date();
+
+PasarelaDePago compra=new PasarelaDePago(2.44242424f, FechaCodigoPago, 0, null, null, null, FechaCodigoPago);
+System.out.printf("Valor: %.2f", compra.Importe );
+System.out.println(compra.getFechaCodigoPago());
+
+
+System.out.println("Escribe el tipo de tarjeta");
+
+int tarjeta = 0;
+tarjeta=sc.nextInt();
+
+  boolean dinero = false;
+    do {
+        System.out.println("Escribe el tipo de tarjeta");
+        tarjeta = sc.nextInt();
+        switch (tarjeta) {
+            case 4:
+                System.out.println("Tu tarjeta sera VISA");
+                dinero = false;
+                break;
+            case 5:
+                System.out.println("Tu tarjeta sera Mastercard");
+                dinero = false;
+                break;
+            case 3:
+                System.out.println("Tu tarjeta sera American espress");
+                dinero = false;
+                break;
+            default:
+                System.out.println("ERROR");
+                dinero = true;
+        }
+
+    } while (dinero == true);
+
+long codigo;
+System.out.print("Escribe el codigo de la tarjeta");
+codigo=sc.nextLong();
+	}
+
+}

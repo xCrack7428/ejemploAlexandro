@@ -1,0 +1,43 @@
+package bidi;
+
+public class Bidi {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int [][] amigo=new int[3][5];
+		
+		amigo[0][0]=15;
+		amigo[0][1]=34;
+		amigo[0][2]=2;
+		amigo[0][3]=3;
+		amigo[0][4]=4;
+
+		amigo[1][0]=5;
+		amigo[1][1]=6;
+		amigo[1][2]=76;
+		amigo[1][3]=56;
+		amigo[1][4]=75;
+
+		amigo[2][0]=135;
+		amigo[2][1]=145;
+		amigo[2][2]=155;
+		amigo[2][3]=135;
+		amigo[2][4]=125;
+	
+
+		bidi.Bidi.lechuga(amigo);
+	}
+	
+	public static void lechuga(int [][] amigo) {
+		for(int i=0;i<3;i++) {
+			for(int o=0;o<5;o++) {
+				System.out.println(amigo[o]);
+
+			}
+			System.out.println(amigo[i]);
+
+		}
+	}
+	
+}

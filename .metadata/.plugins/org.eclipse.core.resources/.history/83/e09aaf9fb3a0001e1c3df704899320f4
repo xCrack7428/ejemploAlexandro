@@ -1,0 +1,28 @@
+package TRABAJO;
+
+import java.util.Date;
+
+/**
+ * 
+ *@author Alexandro 
+ *
+ */
+public class PasarelaDePago {
+Float Importe;
+int efectivo;
+String numeroTarjeta;
+String cuenta;
+private Date CodigoPago;
+
+public PasarelaDePago(Float Importe, int efectivo, String numeroTarjeta, String Cuenta, String cuenta, Date CodigoPago ) {
+	this.Importe=Importe;
+	this.efectivo=efectivo;
+	this.numeroTarjeta=numeroTarjeta;
+	this.cuenta=cuenta;
+	this.CodigoPago=CodigoPago;
+}
+
+
+	
+}
+

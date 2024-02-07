@@ -1,0 +1,24 @@
+package poooo;
+
+public class segundaparte {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int[] numero=new int[8];
+		
+		numero[0]=10;
+		numero[1]=2;
+		numero[2]=3;
+		numero[3]=-5;
+		numero[4]=8;
+		numero[5]=1;
+		numero[6]=50;
+		numero[7]=-3;
+
+		System.out.println(numero[0]+ "el ultimo es " +numero[7]);
+		
+		
+	}
+
+}

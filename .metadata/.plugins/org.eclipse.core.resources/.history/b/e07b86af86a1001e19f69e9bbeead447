@@ -1,0 +1,108 @@
+package TRABAJO;
+
+import java.util.Date;
+
+/**
+ * 
+ *@author Alexandro 
+ *
+ */
+public class Cliente {
+public static String Productoeliminado;
+public static String eliminarProducto1;
+ String nombre;
+ String apellido;
+ String Direccion;
+ int Historial;
+ private Date FechaDeAlta;
+ int Telefono;
+ int CodigoPedido=(int) (Math.random()*1000000);
+ static String agregarPedido;
+ 
+ 
+ public Cliente(String nombre, String apellidos, String Direccion, int Historial, Date FechaDeAlta, int Telefono) {
+	 this.nombre=nombre;
+	 this.apellido=apellido;
+	 this.Direccion=Direccion;
+	 this.Historial=Historial;
+	 this.FechaDeAlta=FechaDeAlta;
+	 this.Telefono=Telefono;
+ }
+ 
+ 
+ 
+ public Date getFechaDeAlta() {
+	return FechaDeAlta;
+}
+
+
+
+public void setFechaDeAlta(Date fechaDeAlta) {
+	FechaDeAlta = fechaDeAlta;
+}
+
+
+
+public static void agregarPedido(String Pedido) {
+	 System.out.println(Pedido);
+}
+ 
+ 
+ 
+ public class Pedido {
+	
+	 Cliente Cliente;
+	 Producto Producto1;
+	 Producto Producto2;
+	 Float ImporteTotal;
+	 PasarelaDePago Pago;
+	 String Estado;
+	 String TipoPago;
+	 static String agregarCliente;
+	 static String agregarProducto1;
+	 static String agregarProduct2;
+	 static String eliminarProducto;
+	 
+	 public Pedido(Cliente Cliente, Producto Producto1, Producto Producto2, Float ImporteTotal, PasarelaDePago Pago, String Estado, String TipoPago) {
+		 this.Cliente=Cliente;
+		 this.Producto1=Producto1;
+		 this.Producto2=Producto2;
+		 this.ImporteTotal=ImporteTotal;
+		 this.Pago=Pago;
+		 this.Estado=Estado;
+		 this.TipoPago=TipoPago;
+	 }
+	 
+	 //Voy a utilizar el public, lo que hace esta funcion es que al poner un nombre dentro se convierten en constantes
+	 public enum Estado {
+		 PAGADO, PREPARANDO, LISTO, SERVIDO
+	 }
+	 
+	 
+	 public static void agregarCliente(Cliente Cliente) {
+		 System.out.println(Cliente);
+	}
+	 
+	 public static void agregarProducto1(String Producto1) {
+		 System.out.println(Producto1);
+	}
+	 
+	 public static void agregarProducto2(String Producto2) {
+		 System.out.println(Producto2);
+	}
+	 
+
+	public static void eliminarProducto(String string) {
+		
+		
+	}
+
+
+
+	
+	
+}
+}
+
+
+	

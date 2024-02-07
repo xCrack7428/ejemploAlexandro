@@ -1,0 +1,17 @@
+package poooo;
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int[] array=new int[100];
+int nomames = 0;
+for (int i=0;i<100;i++) {
+	array[i]=nomames;
+	System.out.println(array[i]);
+}
+
+
+	}
+
+}

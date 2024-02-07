@@ -1,0 +1,35 @@
+
+import java.util.ArrayList;
+import java.util.Iterator;
+//programa que se cree arraylist <String>
+	//creacion arraylist main
+	//metodo que recorra y a añada "hola" en todos los valores
+	//el metodo tiene que devolver arraylist y lo recupere en el main y la imprima
+
+public class listas {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		
+ArrayList <String> espabila=new ArrayList<String>();
+
+		espabila.add("juan");
+		espabila.add("Mario");
+		espabila.add("Dante");
+		espabila.add("Kratos");
+		espabila.add("Goku");
+		espabila.add("Willyrex");
+		
+		Iterator<String> pendejo= espabila.iterator();
+		while(pendejo.hasNext()) {
+			System.out.println("hola " +pendejo.next());
+
+
+		}
+		System.out.println("");
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package TRABAJO;
+/**
+ * 
+ *@author Alexandro 
+ *
+ */
+public class PasarelaDePago {
+Float Importe;
+
+}

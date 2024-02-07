@@ -1,0 +1,23 @@
+package TRABAJO;
+
+import java.util.Date;
+
+/**
+ * 
+ *@author Alexandro 
+ *
+ */
+public class Aplicacion {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Date FechaDeAlta=new Date();
+Cliente cliente1=new Cliente(null, null, null, null, FechaDeAlta, 0);
+System.out.println(cliente1.nombre.toLowerCase());
+System.out.println(cliente1.apellidos.toUpperCase());
+
+
+
+	}
+
+}

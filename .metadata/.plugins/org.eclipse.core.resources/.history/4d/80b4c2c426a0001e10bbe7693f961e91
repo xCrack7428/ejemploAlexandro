@@ -1,0 +1,15 @@
+	package TRABAJO;
+/**
+ * 
+ *@author Alexandro 
+ *
+ */
+public class Producto {
+String Nombre;
+Float Precio;
+int Cantidad;
+String Efectivo;
+String NumeroTarjeta;
+String NumeroCuenta;
+
+}

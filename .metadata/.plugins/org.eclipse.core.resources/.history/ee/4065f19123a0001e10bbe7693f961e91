@@ -1,0 +1,18 @@
+	package TRABAJO;
+/**
+ * 
+ *@author Alexandro 
+ *
+ */
+public class Producto {
+public Producto(Object object) {
+		// TODO Auto-generated constructor stub
+	}
+String Nombre;
+Float Precio;
+int Cantidad;
+String Efectivo;
+String NumeroTarjeta;
+String NumeroCuenta;
+
+}

@@ -1,0 +1,55 @@
+package TRABAJO;
+/**
+ * 
+ *@author Alexandro 
+ *
+ */
+public class Cliente {
+ String nombre;
+ String apellidos;
+ String Direccion;
+ String Historial;
+ int FechaDeAlta;
+ int Telefono;
+ 
+ 
+ public class Pedido {
+	 Cliente Cliente;
+	 String Producto1;
+	 String Producto2;
+	 Float ImporteTotal;
+	 PasarelaDePago Pago;
+	 String Estado;
+	 String TipoPago;
+	 static String agregarCliente;
+	 static String agregarProducto1;
+	 static String agregarProduct2;
+	 static String eliminarProducto;
+	 
+	 
+	 public static void agregarCliente(String Cliente) {
+		 System.out.println(Cliente);
+	}
+	 
+	 public static void agregarProducto1(String Producto1) {
+		 System.out.println(Producto1);
+	}
+	 
+	 public static void agregarProducto2(String Producto2) {
+		 System.out.println(Producto2);
+	}
+	 
+	 public static void eliminarProducto(String Producto2, String Producto1) {
+		 System.out.printf(Producto2, Producto1);
+	}
+	 
+	 
+	 
+	 
+	 
+	 
+ }
+}
+
+
+	

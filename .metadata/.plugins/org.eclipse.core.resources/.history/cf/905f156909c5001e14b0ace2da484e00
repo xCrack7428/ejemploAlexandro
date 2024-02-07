@@ -1,0 +1,16 @@
+package ultima;
+
+public class Ultimate {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		int lechuga []=
+				{3,2,1,5,7,10};
+		
+		System.out.println(lechuga);
+
+	}
+
+}

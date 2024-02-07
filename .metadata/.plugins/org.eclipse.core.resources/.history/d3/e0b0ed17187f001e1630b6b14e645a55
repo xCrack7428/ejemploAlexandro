@@ -1,0 +1,93 @@
+package dinero;
+
+import java.util.Scanner;
+
+public class euros {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc= new Scanner (System.in);
+		
+		System.out.print("Escribe el tipo de tarjeta");
+		
+		
+		int tarjeta = 0;
+		tarjeta=sc.nextInt();
+		switch(tarjeta)	{
+		case 4:
+			System.out.print("Tu tarjeta sera VISA");
+			break;
+		case 5:
+			System.out.print("Tu tarjeta sera Mastercard");
+			break;
+		case 3:
+			System.out.print("Tu tarjeta sera American espress");
+			break;
+		}
+		long codigo;
+		System.out.print("Escribe el codigo de la tarjeta");
+		codigo=sc.nextLong();
+		System.out.print("Introduce a pagar");
+		int total;
+		
+		total=sc.nextInt();
+		
+		int pago = 0;
+		System.out.print("Introduce lo que desea pagar");
+		pago=sc.nextInt();
+		
+		int devuelta;
+		devuelta=total-pago;
+		
+		System.out.print("DEVOLUCION: " +devuelta);
+		
+		while(pago>total) {
+		int €100=(devuelta / 100);
+		
+		
+		int €50 = (devuelta / 50);
+		
+		
+		int €20 = (devuelta / 20);
+		
+		
+		int €10 = (devuelta / 10);
+		
+		
+		int €5 = (devuelta / 5);
+		
+	
+		int €2 = (devuelta / 2);
+		
+	
+		int €1 = (devuelta / 1);
+		
+	
+	
+		System.out.print(€100 +"billetes de 100");
+		System.out.print(€50 +"billetes de 50");
+		System.out.print(€20 +"billetes de 20");
+		System.out.print(€10 +"billetes de 10");
+		System.out.print(€5 +"billetes de 5");
+		System.out.print(€2 +"monedas de 2");
+		System.out.print(€1 +"monedas de 1");
+	}
+					
+					
+					
+					
+					
+					
+	}			
+					}
+					
+		
+
+			
+		
+	
+	
+	
+	
+	

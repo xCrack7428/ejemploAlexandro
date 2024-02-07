@@ -1,0 +1,87 @@
+package TRABAJO;
+
+import java.util.Date;
+
+/**
+ * 
+ *@author Alexandro 
+ *
+ */
+public class Cliente {
+public static String Productoeliminado;
+public static String eliminarProducto1;
+ String nombre;
+ String apellidos;
+ String Direccion;
+ String Historial;
+ int FechaDeAlta;
+ int Telefono;
+ static String agregarPedido;
+ 
+ 
+ public Cliente(String nombre, String apellidos, String Direccion, String Historial, int FechaDeAlta, int Telefono) {
+	 this.nombre=nombre;
+	 this.apellidos=apellidos;
+	 this.Direccion=Direccion;
+	 this.Historial=Historial;
+	 this.FechaDeAlta=FechaDeAlta;
+	 this.Telefono=Telefono;
+ }
+ 
+ public static void agregarPedido(String Pedido) {
+	 System.out.println(Pedido);
+}
+ 
+ 
+ 
+ public class Pedido {
+	
+	 Cliente Cliente;
+	 String Producto1;
+	 String Producto2;
+	 Float ImporteTotal;
+	 PasarelaDePago Pago;
+	 String Estado;
+	 String TipoPago;
+	 static String agregarCliente;
+	 static String agregarProducto1;
+	 static String agregarProduct2;
+	 static String eliminarProducto;
+	 
+	 public Pedido(Cliente Cliente, String Producto1, String Producto2, Float ImporteTotal, PasarelaDePago Pago, String Estado, String TipoPago) {
+		 this.Cliente=Cliente;
+		 this.Producto1=Producto1;
+		 this.Producto2=Producto2;
+		 this.ImporteTotal=ImporteTotal;
+		 this.Pago=Pago;
+		 this.Estado=Estado;
+		 this.TipoPago=TipoPago;
+	 }
+	 
+	 public static void agregarCliente(String Cliente) {
+		 System.out.println(Cliente);
+	}
+	 
+	 public static void agregarProducto1(String Producto1) {
+		 System.out.println(Producto1);
+	}
+	 
+	 public static void agregarProducto2(String Producto2) {
+		 System.out.println(Producto2);
+	}
+	 
+
+	public static void eliminarProducto(String string) {
+		
+		
+	}
+
+
+
+	
+	
+}
+}
+
+
+	

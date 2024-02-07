@@ -1,0 +1,39 @@
+package TRABAJO;
+/**
+ * 
+ *@author Alexandro 
+ *
+ */
+public class Cliente {
+ String nombre;
+ String apellidos;
+ String Direccion;
+ String Historial;
+ int FechaDeAlta;
+ int Telefono;
+ 
+ 
+ public class Pedido {
+	 Cliente Cliente;
+	 String Producto1;
+	 String Producto2;
+	 Float ImporteTotal;
+	 PasarelaDePago Pago;
+	 String Estado;
+	 String TipoPago;
+	 static String agregarCliente;
+	 static String agregarProducto1;
+	 static String agregarProduct2;
+	 static String eliminarProducto;
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+ }
+}
+
+
+	

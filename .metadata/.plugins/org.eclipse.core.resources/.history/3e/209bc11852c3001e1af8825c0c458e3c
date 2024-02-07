@@ -1,0 +1,19 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class hol {
+	static ArrayList <String> lechuga=new ArrayList<String>();
+
+	
+	
+	public static void merengue(ArrayList<String> espabila) {
+	Iterator<String> pendejo= lechuga.iterator();
+	
+
+	while(pendejo.hasNext()) {
+		System.out.println("hola " +pendejo.next());
+
+}	
+}	
+}
+

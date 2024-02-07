@@ -1,0 +1,25 @@
+package TRABAJO;
+/**
+ * 
+ *@author Alexandro 
+ *
+ */
+public class PasarelaDePago {
+Float Importe;
+int efectivo;
+String numeroTarjeta;
+String cuenta;
+int CodigoPago;
+
+public PasarelaDePago(Float Importe, int efectivo, String numeroTarjeta, String Cuenta, String cuenta) {
+	this.Importe=Importe;
+	this.efectivo=efectivo;
+	this.numeroTarjeta=numeroTarjeta;
+	this.cuenta=cuenta;
+}
+
+public int getTime() {
+	return CodigoPago;
+	
+}
+}

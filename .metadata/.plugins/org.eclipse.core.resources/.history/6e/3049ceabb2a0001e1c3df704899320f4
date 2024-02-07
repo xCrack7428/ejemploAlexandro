@@ -1,0 +1,19 @@
+package TRABAJO;
+/**
+ * 
+ *@author Alexandro 
+ *
+ */
+public class PasarelaDePago {
+Float Importe;
+int efectivo;
+String numeroTarjeta;
+String cuenta;
+
+public PasarelaDePago(Float Importe, int efectivo, String numeroTarjeta, String Cuenta, String cuenta) {
+	this.Importe=Importe;
+	this.efectivo=efectivo;
+	this.numeroTarjeta=numeroTarjeta;
+	this.cuenta=cuenta;
+}
+}

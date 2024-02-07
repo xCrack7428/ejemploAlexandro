@@ -1,0 +1,31 @@
+package TRABAJO;
+
+import java.util.Date;
+
+/**
+ * 
+ *@author Alexandro 
+ *
+ */
+public class Aplicacion {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Zona cliente
+Date FechaDeAlta=new Date();
+Cliente cliente1=new Cliente("SEBASTIAN", "GONZALEZ", "CALLE ME CAGO", null, FechaDeAlta, 0);
+System.out.println(cliente1.nombre.toLowerCase());
+System.out.println(cliente1.apellidos.toUpperCase());
+System.out.println(cliente1.Direccion);
+
+System.out.println(cliente1.getFechaDeAlta());
+
+
+//Zona pasarela de pago
+
+PasarelaDePago compra=new PasarelaDePago(2.44242424f, 0, null, null, null, FechaDeAlta);
+System.out.printf("Valor: %.2f", compra.Importe );
+
+	}
+
+}
